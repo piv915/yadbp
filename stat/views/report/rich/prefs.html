@@ -1,0 +1,8 @@
+<h2> Настройки отчета </h2>
+<form action="/stat/index.php/report.rich/setprefs/" method="post">
+Минимальный баланс: <br />
+<input type="text" name="minBalance" value="<field name="minBalance" />" /><br />
+<input type="checkbox" value="1" name="liveOnly" id="inpliveOnly" 
+	<field name="liveOnlyflag" /> />&nbsp;<label for="inpliveOnly">отображать удаленных</label><br />
+<input type="submit" value="Установить" class="button" />
+</form>

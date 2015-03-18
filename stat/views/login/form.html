@@ -1,0 +1,47 @@
+<div id="login">
+	<h3 class="underline">Авторизация</h3>
+	<field name="error" />	
+	<form action="/stat/index.php/login/check/" method="post">
+		<fieldset>
+		<p>Логин</p>
+		<input type="text" class="text" name="login" maxlength="16" id="lflogin" 
+			value="<field name="login" />"	/>
+		</fieldset>
+		
+		<fieldset>
+		<p>Пароль</p>
+		<input type="password" class="text" name="password" maxlength="16" id="lfpass" />
+		</fieldset>
+		
+		<fieldset>
+		<label><input type="checkbox" name="sp" value="1">&nbsp;запомнить</label>
+<!--		
+		<select name="sl">
+			<option value="1">15 минут</option>
+			<option value="2">1 час</option>
+			<option value="3">сутки</option>
+			<option value="4">неделя</option>
+		</select>
+		
+-->		</fieldset>		
+		
+		<fieldset>
+		<input type="submit" class="submit" value="Войти &#8594;" />
+		</fieldset>
+	
+		
+	</form>
+	<div class="tip">
+		<field name="tip" />
+	</div>
+<script language="javascript">
+function focus_lf() {
+	var lf = (<field name="focuspwd" />) 
+		? document.getElementById("lfpass")
+		: document.getElementById("lflogin");
+	lf.focus();	
+}
+window.onload = focus_lf;
+</script>
+
+</div>

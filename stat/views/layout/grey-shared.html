@@ -1,0 +1,45 @@
+
+<h2>Период</h2>
+
+<form action="/stat/index.php/dispatch/timeout/" method="post">
+<input type="text" class="date" name="start_date" value="<field name="startdate" />"/>&nbsp;&ndash;&nbsp;<input type="text" class="date" name="end_date" value="<field name="enddate" />" /><br />
+<input type="submit" value="Все время" name="all" class="button" /> <input type="submit" value="Вручную" name="set" class="button" /><br />
+<input type="submit" value="Месяц" name="reset" class="button" /> <input type="submit" value="Прош. месяц" name="backmonth" class="button" /><br />
+<input type="submit" value="Сегодня" name="today" class="button" /> <input type="submit" value="Вчера" name="yesterday" class="button" /> 
+</form>
+<field name="repSettings" />
+<h2>Отчеты</h2>
+<h3>по счету</h3>
+<ul>
+<li><a href="/stat/index.php/report.account/">Карта счета</a></li>
+<li><a href="/stat/index.php/report.account/byAccID/">Операции по счету</a></li>
+</ul>
+<h3>общие</h3>
+<ul>
+<li><a href="/stat/index.php/report.summary/">Все операции</a></li>
+<li><a href="/stat/index.php/report.rich/">Остатки</a></li>
+<li><a href="/stat/index.php/report.charge/">Расходы</a></li>
+</ul>
+<h3>ПС</h3>
+<ul>
+<!--
+<li><a href="/stat/index.php/report.ps.nikitarf/">&laquo;Никита РФ&raquo;</a></li>
+<li><a href="/stat/index.php/report.ps.nikitaam/">&laquo;Никита Арм&raquo;</a></li>
+<li><a href="/stat/index.php/report.ps.nikitaua/">&laquo;Никита Укр&raquo;</a></li>
+<li><a href="/stat/index.php/report.ps.nikitage/">&laquo;Никита Груз&raquo;</a></li>
+<li>&mdash;&mdash;&mdash;&mdash;&mdash;</li>
+<li><a href="/stat/index.php/report.ps.smsonline/">SMSOnline</a></li>
+<li><a href="/stat/index.php/report.ps.robox/">Robox</a></li>
+-->
+<li><a href="/stat/index.php/report.ps.wmmerchant/">Webmoney Merchant</a></li>
+<li><a href="/stat/index.php/report.ps.platron/">Platron</a></li>
+<li><a href="/stat/index.php/report.ps.ifree/">i-Free</a></li>
+<li><a href="/stat/index.php/report.ps.smsdostup/">sms-dostup</a></li>
+<li><a href="/stat/index.php/report.ps.moder/">Модераторы</a></li>
+</ul>
+<h3>Управление</h3>
+<ul>
+<li><a href="/stat/index.php/control.balance/">Пополнить баланс</a></li>
+</ul>
+<h2>Система</h2>
+<a href="/stat/index.php/login/logout/">Выход</a>

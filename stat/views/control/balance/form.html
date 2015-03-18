@@ -1,0 +1,28 @@
+	<h3>Подарить кредитов</h3>
+	
+	<form action="/stat/index.php/control.balance/post/" method="post">
+	
+		<fieldset>
+		<p>Номер счета</p>
+		<input type="text" class="text" name="accID" maxlength="16" id="" 
+			value="<field name="accID" />"	/>
+		</fieldset>
+		
+		<fieldset>
+		<p>Сумма</p>
+		<input type="text" class="text" name="amount" maxlength="16" id="" />
+		</fieldset>
+		
+		<span style="color:red"><field name="error" /></span>
+		
+		<fieldset>
+		<p>Донатор</p>
+		<input type="text" class="text" name="donator" maxlength="5" id="" />
+		</fieldset>
+		
+		<fieldset>
+		<input type="submit" class="submit" value="Отправить!" />
+		</fieldset>
+	
+		
+	</form>

@@ -1,0 +1,34 @@
+<h2> Настройки отчета </h2>
+<form action="/stat/index.php/report.ps.ifree.log/setprefs/" method="post">
+Показать: <br />
+<input type="checkbox" value="1" name="Succ" id="chkSucc" 
+	<field name="Succflag" /> />&nbsp;<label for="chkSucc">успешные</label><br />
+<input type="checkbox" value="1" name="Mistake" id="chkMistake" 
+	<field name="Mistakeflag" /> />&nbsp;<label for="chkMistake">ошибочные</label><br />
+<!--Префикс: <br />
+<select name="prefix">
+<option value="">Любой</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="07">08</option>
+<option value="09">09</option>
+</select><br />-->
+Страна: <br />
+<select name="country">
+<option value="">Любая</option>
+<option value="ru" <field name="select_ru"/>>Россия</option>
+<option value="kz" <field name="select_kz"/>>Казахстан</option>
+<option value="ua" <field name="select_ua"/>>Украина</option>
+<option value="am" <field name="select_am"/>>Армения</option>
+</select><br />
+Номер абонента: <br />
+<input type="text" name="abonent" value="<field name="abonent" />"/><br />
+<input type="checkbox" name="abExact" id="abExact"
+	value="1" <field name="abExactflag" /> >&nbsp;<label for="abExact">точное совп.</label><br />
+Текст сообщения: <br />
+<input type="text" name="smsText" value="<field name="smsText" />" /><br />
+<input type="checkbox" name="smsExact" id="smsExact"
+	value="1" <field name="smsExactflag" /> >&nbsp;<label for="smsExact">точное совп.</label><br />
+
+<input type="submit" value="Установить" class="button" />
+</form>

@@ -1,0 +1,38 @@
+<ul>
+<li>Создан: <field name="createTm" /></li>
+<li>Последняя транзакция: <field name="lastOp" /></li>
+<li>Текущий баланс: <field name="balance" /> / <field name="reserve" /> </li>
+<li><field name="accState" /></li>
+</ul>
+
+<h3>По услугам</h3>
+<table class="data" width="50%">
+	<tr>
+		<th>Название</th>
+		<th width="25%">Кол-во</th>
+		<th width="25%">Сумма<br />(кредиты)</th>
+	</tr>
+	<field name="servData" />
+	<tr>
+		<th>Итого</th>
+		<th>&nbsp;</th>
+		<td align="right"><b><field name="servTotal" /></b></th>
+	</tr>
+</table>
+
+<h3>По платежным системам</h3>
+<table class="data" width="50%">
+	<tr>
+		<th>Название</th>
+		<th width="25%">Кол-во</th>
+		<th width="25%">Сумма<br />(кредиты)</th>
+	</tr>
+	<field name="payData" />
+	<tr>
+		<th>Итого</th>
+		<th>&nbsp;</th>
+		<td align="right"><b><field name="payTotal" /></b></th>
+	</tr>
+</table>
+
+<a href="/stat/index.php/report.account/byAccId/">лог операций по этому счету</a>
